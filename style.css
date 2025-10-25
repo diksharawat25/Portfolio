@@ -21,6 +21,7 @@ body {
   position: sticky;
   height: auto;
   width: 100%;
+  z-index: 10000;
 }
 
 .navbar .left-logo img {
@@ -62,7 +63,46 @@ body {
   display: none;
   z-index: 101;
 }
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  .close-icon {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  .navbar .right-menu ul li {
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 0px;
+    display: block;
+  }
 
+  .right-menu ul {
+    width: 220px;
+    right: -100%;
+  }
+
+  .right-menu ul.active {
+    right: 0;
+  }
+
+  .right-menu ul li {
+    margin: 40px;
+  }
+}
 @media (max-width: 700px) {
   .menu-icon {
     display: block;
@@ -105,6 +145,7 @@ body {
     backdrop-filter: blur(10px);
     transition: right 0.4s ease;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
   }
 
   .right-menu ul.active {
@@ -116,6 +157,47 @@ body {
   }
 
 }
+@media (max-width: 400px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  .close-icon {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  .navbar .right-menu ul li {
+    font-size: 14px;
+    padding: 4px;
+    margin-bottom: 0px;
+    display: block;
+  }
+
+  .right-menu ul {
+    width: 200px;
+    right: -100%;
+  }
+
+  .right-menu ul.active {
+    right: 0;
+  }
+
+  .right-menu ul li {
+    margin: 30px;
+  }
+}
+
   /* HOME SECTION */
   .home {
     display: flex;
@@ -316,6 +398,8 @@ body {
   .home-left .img-box {
     width: 18rem;
     height: 18rem;
+      position: relative;
+    z-index: 1;
   }
 
   .social-links a {
@@ -846,6 +930,7 @@ body {
       padding: 5px;
     }
   }
+
   /* FOOTER SECTION */
   .footer-content {
     text-align: center;
