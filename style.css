@@ -63,46 +63,6 @@ body {
   display: none;
   z-index: 101;
 }
-@media (max-width: 1024px) {
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 26px;
-    cursor: pointer;
-    z-index: 1100;
-  }
-  .close-icon {
-    display: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    color: #333;
-    cursor: pointer;
-    z-index: 1100;
-  }
-  .navbar .right-menu ul li {
-    font-size: 16px;
-    padding: 5px;
-    margin-bottom: 0px;
-    display: block;
-  }
-
-  .right-menu ul {
-    width: 220px;
-    right: -100%;
-  }
-
-  .right-menu ul.active {
-    right: 0;
-  }
-
-  .right-menu ul li {
-    margin: 40px;
-  }
-}
 @media (max-width: 700px) {
   .menu-icon {
     display: block;
